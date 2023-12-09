@@ -1,5 +1,6 @@
 resource "aws_s3_bucket" "static_site_bucket" {
   bucket = "s3-ittalent-terraform-gabriel-lins"
+  force_destroy = true
 }
 
 resource "aws_s3_bucket_website_configuration" "name" {
